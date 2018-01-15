@@ -1,0 +1,35 @@
+Use Case: Update Member Records
+Context: Specific information within a member record is changed by
+Acme each evening at 9pm or by an Operator. 
+Actors: Acme, Operator
+
+Main Success Scenario:
+1. The user keys in the member number of the member record to be
+updated.
+2. The corresponding member name is displayed to the user.
+3. The user is prompted to verify the displayed member is the one
+to be updated.
+4. Using a menu, the user selects from the following:
+	4.1 Update Name: The user is prompted to enter the new
+	member name in the format First Last (e.g. John Doe).
+	4.2 Update Address:
+		4.2.1 The user is prompted to enter the new street
+		address of the member.
+		4.2.2 The user is prompted to enter the new city
+		of the member.
+		4.2.3 The user is prompted to enter the state of
+		the member in the format of a postal abbreviation.
+		4.3.4 The user is prompted to enter the new ZIP
+		code of the member.
+	4.3 Update Member Status: The user is prompted to enter
+	the new member status of the member (e.g. suspended).
+	4.4 Exit: The use case is ended.
+5. The system rewrites the member record and saves the changes to
+the ChocAn Data Center computer.
+
+Extensions:
+1a. The user enters an invalid member number:
+	1a.1 The system displays "Invalid number".
+	1a.2 The use case is ended.
+3a. If the displayed member is not to be updated, then the use
+case is ended.

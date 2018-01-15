@@ -1,0 +1,16 @@
+<<control class>>
+Main Accounting Procedure
+
+- useTime : DateTime
+- members : Member Record*
+- providers : Provider Record*
+- managerRequest : struct Request<string, int>
+
++ checkTime() : bool
++ printAllReports() : void
++ printReport() : void
+
+Associations: Manager Terminal
+
+Includes: Member Report Class, Provider Report Class, EFT Data
+Class

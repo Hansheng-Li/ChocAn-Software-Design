@@ -1,0 +1,79 @@
+Accounts Payable: A type of short-term debt to be paid off to
+	creditors. E.g. money ChocAn owes it's providers.
+
+Acme Accounting Services: A third-party organization contracted to
+	handle financial procedures such as recording payments of
+	membership fees, suspending members whose fees are
+	overdue, and reinstating suspended members who have now
+	paid what is owing.
+
+ChocAn Data Center: Remote site where ChocAn servers store all
+	relevant records such as member, provider, and service
+	records.
+
+Chocoholics Anonymous (ChocAn): An organization offering services
+	to help those suffering from an addiction to chocolate.
+
+Consultation: A form of health care service given to ChocAn
+	members by its providers.
+ 
+Electronic Funds Transfer (EFT) Data: A record file describing the
+	amount of money ChocAn will transfer to a particular
+	provider.
+
+Health Care Professional (Provider): Those who provide health care
+	services to ChocAn members. Receives a weekly provider
+	report.
+
+Interactive Mode: State of the Data Center computers allowing
+	operators to add, delete, or update member and provider
+	records.
+
+Main Accounting Procedure: Reads the week's service records and
+	produces all reports.
+
+Manager: Employee at ChocAn. Receives a weekly summary report, and
+	is able to produce any report upon request.
+
+Member: Those who pay a monthly fee to ChocAn. Receives a weekly
+	member report.
+
+Member Card: Plastic card embossed with member's name and
+	incorporating a magnetic strip encoding member number.
+
+Member Number: 9-digit number used to identify ChocAn members.
+
+Member Status: Statement describing a member's relationship to
+	ChocAn. A member status may be suspended if the member
+	has not paid fees for at least one month.
+
+Member Record: Information stored at the ChocAn Data Center
+	describing attributes about a ChocAn member.
+
+Member Report: File generated listing services provided to a
+	member that week, sorted in order of service date.
+
+Operator: Employee at ChocAn Data Center capable to add, delete,
+	and update member and provider records.
+
+Provider Directory: File containing an alphabetically ordered list
+	of service names and their corresponding codes and fees.
+
+Provider Number: 9-digit number used to identify ChocAn providers.
+
+Provider Record: Information stored at the ChocAn Data Center
+	describing attributes about a ChocAn provider.
+
+Provider Report: File generated listing services given by a
+	provider that week, sorted in the order data was received
+	by the computer, along with a summary of total fees owed
+	and number of consultations that week.
+
+Provider's Form: Verification form completed after generating a
+	service record billing ChocAn.
+
+Service Code: 6-digit number used to identify a particular service
+	provided by a ChocAn provider.
+
+Service Record: Information stored on disk describing attributes
+	of a service provided to a member by a provider.

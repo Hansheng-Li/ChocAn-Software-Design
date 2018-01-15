@@ -1,0 +1,21 @@
+<<control class>>
+
+Manage Provider Records Class
+
+-
+provider : Provider Record
+
++
+addProv(p : Provider Record) : void
++
+changeProvName(p : Provider Record) : void
++
+changeProvNum(p : Provider Record) : void
++
+changeProvPhoneNum(p : Provider Record) : void
++
+changeAddress(p : Provider Record) : void
++
+deleteProv(p : Provider Record) : void
+
+Associations: Operator Terminal, Member Records

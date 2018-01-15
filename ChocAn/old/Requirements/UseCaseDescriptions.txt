@@ -1,0 +1,150 @@
+Use Case: Verify Member NumberContext Member provides member number to provider to confirm the member number is valid.Actors: Member, ProviderMain Success Scenario: 1. The provider either keys in the member number provided by the member.2. The terminal dials the ChocAn Data Center computer.3. The ChocAn Data Center Computer is prompted to verify the member number4. If the member number is valid, then the word “Validated” is displayed on the provider’s terminal.5. The provider chooses to utilize the Produce Service Record use case.Extensions:1a. The provider slides the member’s membership card through the card reader.4a. If the member number is not valid, then the reason is displayed to the provider’s terminal (e.g. “Invalid number” or “Member suspended”).5a. If the provider does not choose to utilize the Produce Service Record case, then the use case is ended.
+
+
+Use Case: Produce Service Record Context: Information about the service provided to the member is saved to disk.Actors: ProviderMain Success Scenario: 1. The provider is prompted to enter the date of service in the format MM-DD-YYYY.2. The provider is prompted to enter the service code.3. The name of service (up to 20 characters) corresponding to the service code provided is displayed on the provider’s terminal. 4. The provider is prompted to verify the displayed service is correct.5. If the provider chooses to enter comments about the service provided (up to 100 characters), then they may do so.6. The system writes a record to disk which contains the following fields:Current date and time (MM-DD-YYYY HH:MM:SS)Date service was provided (MM-DD-YYYY)Provider number (9 digits)Member number (9 digits)Service code (6 digits)Comments (100 characters) (optional)7. Utilize use case Create Provider Form.Extensions:5a. If the provider chooses not to enter comments, then the use case continues at step 6.
+
+
+Use Case: Create Provider FormContext: For verification purposes the provider completes a form describing the service provided to the member.Actors: ProviderMain Success Scenario: 1. The system looks up the fee associated with the previously entered service code in the use case Produce Service Record.2. The system displays the service code on the provider’s terminal.3. The provider is prompted to enter the current date in the format MM-DD-YYYY4. The provider is prompted to enter the current time in the format HH:MM:SS5. The provider is prompted to enter the member name in the format First Last (e.g. John Doe).6. The provider is prompted to key in the member number.7. The provider is prompted to key in the service code. 8. The provider is prompted to enter the fee to be paid (up to $999.99)Extensions:None
+
+
+Use Case: Run Main Accounting Procedure
+Context: Weekly procedure run at the ChocAn Data Center that reads the week's file of services provided and prints a number of reports.
+Actors: Data Center Computer
+Main Success Scenario:
+1. 12:00 am every Friday the Main Accounting Procedure initiates.
+2. All ChocAn Member service records from the week are accessed and read.
+3. New report files are created for each Provider and each Member.
+- - 3.1 Produce Member Reports use case
+- - 3.2 Produce Provider Reports use case
+5. A record consisting of electronic funds transfer (EFT) data is written to a disk.
+- - 5.1 Refer to the Produce EFT Data use case
+Extensions:
+None
+
+
+Use Case: Produce Member Reports
+Context: List of weekly Provider service records produced during the Main accounting Procedure and at any time by a Manager
+Actors: Data Center Computer, Manager
+Main Success Scenario:
+1. 12:00 am every Friday the Main Accounting Procedure initiates.
+2. All ChocAn Member service records from that week are accessed and read.
+3. A new report file for each member is created.
+- - 3.1 Each filename consists of the Member's name followed by the date the report is produced.
+- - 3.2 The file is populated with basic Member info at the top (name, number, address, member number)
+- - 3.3 The file is then populated by data from all of the Member's records from the week, in the order they were recorded.
+- - 3.4 The Member Report looks like this:
+
+Member name (25 characters).
+Member number (9 digits).
+Member street address (25 characters).
+Member city (14 characters).
+Member state (2 letters).
+Member ZIP code (5 digits).
+For each service provided, the following details are required:
+Date of service (MM–DD–YYYY).
+Provider name (25 characters).
+Service name (20 characters).
+
+Extensions:
+1a. Instead of the Main Accounting Procedure, a ChocAn Manager initiates the production of provider reports.
+2a. Only service records specified by the Manager are accessed and run.
+
+
+Use Case: Produce Provider Reports
+Context: List of weekly Provider service records produced during the Main Accounting Procedure and at any time by a Manager
+Actors: Data Center Computer, Manager
+Main Success Scenario:
+1. 12:00 am every Friday the Main Accounting Procedure initiates.
+2. All ChocAn Provider service records and provider forms from that week are accessed and read.
+3. A new report file for each provider is created.
+- - 3.1 Each filename consists of the Provider's Name followed by the date the report is produce.
+- - 3.2 The file is populated with basic Provider info at the top (name, number, and address)
+- - 3.3 The file is then populated by data from all of that individual's provider's forms from that week, in order of submission.
+- - 3.4 At the end of the report, a summary is printed consisting the number of consultations and total fees due to that provider.
+- - 3.5 The Provider Report will look like this:
+
+Provider name (25 characters).
+Provider number (9 digits).
+Provider street address (25 characters).
+Provider city (14 characters). Provider state (2 letters).
+Provider ZIP code (5 digits).
+For each service provided, the following details are required:
+Date of service (MM–DD–YYYY).
+Date and time data were received by the computer (MM–DD–YYYY HH:MM:SS).
+Member name (25 characters).
+Member number (9 digits).
+Service code (6 digits).
+Fee to be paid (up to $999.99).
+Total number of consultations with members (3 digits).
+Total fee for week (up to $99,999.99).
+
+4. EFT data is then written to disk.
+Extensions:
+1a. Instead of the Main Accounting Procedure, a ChocAn Manager initiates the production of provider reports.
+2a. Only the service records and provider forms specified by the Manager are accessed and read.
+4a. No EFT data is written if report is created by a Manager.
+
+
+Use Case: Produce EFT Data
+Context: At the end of Main Accounting Procedure, Provider fees are recorded for payment purposes.
+Actors: Data Center Computer
+Main Success Scenario:
+1. Fridays at 12:00 am, the Main Accounting Procedure produces provider reports.
+2. A new Electronic Funds Transfer (EFT) file for each provider report is created.
+- - 2.1 The file is populated with the Provider name, number, and amount to be transferred, all read from the provider's report.
+Extensions:
+None.
+
+
+Use Case: Manage Member Records
+Context: Add, update, or delete member records
+Actors: Operator
+Main Success Scenario:
+1. The system verifies it is in interactive mode.
+2. Using a menu, the operator selects from the following:
+- - 2.1 Add Member Records:
+- - 2.1.1 The operator is prompted to enter the new member's name in the format First Last (e.g. John Doe).
+- - - - 2.1.2 The operator is prompted to enter the new member's street address.
+- - - - 2.1.3 The operator is prompted to enter the new member's city.
+- - - - 2.1.4 The operator is prompted to enter the new member's state in the format of a postal abbreviation.
+- - - - 2.1.5 The operator is prompted to enter the new member's ZIP code.
+- - - - 2.1.6 The system generates a unique member number for the new member, and the new member's status is set as "active".
+- - - - 2.1.7 The new member record is saved to the ChocAn Data Center Computer.
+- - 2.2 Update Member Records: Utilize use case Update Member Records.
+- - 2.3 Delete Member Records:
+- - - - 2.3.1 The operator keys in the member number of the resigned member.
+- - - - 2.3.2 The corresponding member name is displayed to the operator.
+- - - - 2.3.3 The operator is prompted to verify the displayed member is the one to be deleted.
+- - - - 2.3.4 The member record is removed from the ChocAn Data Center computer.
+- - - - 2.4 Exit: The use case is ended.
+Extensions:
+1.a If the system is not in interactive mode, then the use case is ended.
+2.3.1a The operator enters an invalid member number:
+- - 2.3.1a.1 The system displays "Invalid number".
+- - 2.3.1a.2 The use case is ended.
+2.3.3a If the displayed member is not to be deleted, then the use case is ended.
+
+
+Use Case: Update Member Records
+Context: Specific information within a member record is changed by Acme each evening at 9pm or by an Operator.
+Actors: Acme, Operator
+Main Success Scenario:
+1. The user keys in the member number of the member record to be updated.
+2. The corresponding member name is displayed to the user.
+3. The user is prompted to verify the displayed member is the one
+to be updated.
+4. Using a menu, the user selects from the following:
+- - 4.1 Update Name: The user is prompted to enter the new member name in the format First Last (e.g. John Doe).
+- - 4.2 Update Address:
+- - - - 4.2.1 The user is prompted to enter the new street address of the member.
+- - - - 4.2.2 The user is prompted to enter the new city of the member.
+- - - - 4.2.3 The user is prompted to enter the state of the member in the format of a postal abbreviation.
+- - - - 4.3.4 The user is prompted to enter the new ZIP code of the member.
+- - 4.3 Update Member Status: The user is prompted to enter the new member status of the member (e.g. suspended).
+- - 4.4 Exit: The use case is ended.
+5. The system rewrites the member record and saves the changes to the ChocAn Data Center computer.
+Extensions:
+1a. The user enters an invalid member number:
+- - 1a.1 The system displays "Invalid number".
+- - 1a.2 The use case is ended.
+3a. If the displayed member is not to be updated, then the use case is ended.

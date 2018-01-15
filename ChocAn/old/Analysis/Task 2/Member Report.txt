@@ -1,0 +1,20 @@
+<<boundary class>>
+Member Report Class
+
+- member : Member Record
+- dateOfService : vector<string>
+- providerName : vector<string>
+- serviceNames : vector<string>
+- fileName : string
+
++ setMember(m : Member Record) : void
++ addServiceDate(d : Provider Directory) : void
++ addProviderName(s : Service Record) : void
++ addServiceName(s : Service Record) : void
++ setFileName() : void
++ printReport() : void
+
+Associations: Member Record Class, Provider Directory Class,
+Service Record Class
+
+Extends: Main Accounting Procedure Class

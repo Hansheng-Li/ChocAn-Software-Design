@@ -1,0 +1,21 @@
+<<control class>>
+
+Manage Member Records Class
+
+-
+member : Member Record
+
++
+addMem(m : Member Record) : void
++
+changeMemName(m : Member Record) : void
++
+changeMemNum(m : Member Record) : void
++
+changeMemPhoneNum(m : Member Record) : void
++
+changeAddress(m : Member Record) : void
++
+deleteMem(m : Member Record) : void
+
+Associations: Operator Terminal, Provider Records

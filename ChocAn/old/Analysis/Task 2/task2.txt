@@ -1,0 +1,207 @@
+<<boundary class>>
+EFT Data
+
+- providerName : string
+- providerNumber : int
+- amount : double
+- fileName : string
+
++ setProviderName(p : Provider Record) : void
++ setProviderNumber(p : Provider Record) : void
++ setAmount(f : Provider Form) : void
++ setFileName() : void
++ printData() : void
+
+Associations: Provider Form Class, Provider Record Class
+
+Extends: Main Accounting Procedure Class
+
+
+<<boundary class>>
+Member Report Class
+
+- member : Member Record
+- dateOfService : vector<string>
+- providerName : vector<string>
+- serviceNames : vector<string>
+- fileName : string
+
++ setMember(m : Member Record) : void
++ addServiceDate(d : Provider Directory) : void
++ addProviderName(s : Service Record) : void
++ addServiceName(s : Service Record) : void
++ setFileName() : void
++ printReport() : void
+
+Associations: Member Record Class, Provider Directory Class,
+Service Record Class
+
+Extends: Main Accounting Procedure Class
+
+
+<<boundary class>>
+Provider Report Class
+
+- provider : Provider Record
+- services : vector<Provider Form>
+- fileName : string
+
++ setProvider(p : Provider Record) : void
++ addService(s : Provider Form) : void
++ setFileName() : void
++ printReport() : void
+
+Associations: Provider Form Class, Provider Record Class
+
+Extends: Main Accounting Procedure Class
+
+
+<<control class>>
+Main Accounting Procedure Class
+
+- useTime : DateTime
+- members : Member Record*
+- providers : Provider Record*
+- managerRequest : struct Request
+- struct Request {
+  	requestType : string
+  	number : int
+  }
+
++ checkTime() : bool
++ printAllReports() : void
++ printReport() : void
+
+Associations: Manager Terminal
+
+Includes: EFT Data Class, Member Report Class, Provider Report
+Class
+
+
+<<control class>>
+Manage Member Record (MR) Class
+
+- members : Member Record*
+
++ addMember() : void
++ updateMember(m : Member Record) : void
++ deleteMember(m : Member Record) : void
+
+Associations: Member Record Class, Operator Terminal Class
+
+
+<<control class>>
+Manage Provider Record (PR) Class
+
+- providers : Provider Record*
+
++ addProvider() : void
++ updateProvider(p : Provider Record) : void
++ deleteProvider(p : Provider Record) : void
+
+Associations: Member Record Class, Operator Terminal Class
+
+
+<<control class>>
+Record Service Class
+
+- newService : Service Record
+- newProviderForm : Provider Form
+
++ setNewService() : void
++ setNewProviderForm() : void
++ addServiceRecord() : void
++ addProviderForm() : void
+
+Associations: Provider Form Class, Service Record Class
+
+
+<<control class>>
+Verify Member Class
+
+- memberNumber : int
+
++ setMemberNumber() : void
++ verifyMember() : bool
+
+Associations: Member Record Class, Provider Terminal Class
+
+
+<<entity class>>
+Member Record Class
+- memberList : vector<struct Member>
+- struct Member {
+  	name : char[25]
+  	number : int
+  	address : char[25]
+  	city : char[14]
+  	state : char[2]
+  	zip : int
+  	services : Service Record*
+  }
+
+Associations: Manage MR Class, Member Report Class, Verify Member
+Class
+
+
+<<entity class>>
+Provider Directory Class
+
+- serviceList : vector<struct Service>
+- struct Service {
+  	code : int
+  	name : string
+  	fee : double
+  }
+
+Associations: Member Report Class, Record Service Class
+
+
+<<entity class>>
+Provider Form Class
+
+- providerFormList : vector<struct Form>
+- struct Form {
+  	serviceDate : Date
+  	dateTimeReceived : DateTime
+  	memberNumber : int
+  	serviceCode : int
+  	serviceFee : double
+  }
+
+Associations: EFT Data Class, Provider Report Class, Record
+Service Class
+
+
+<<entity class>>
+Provider Record Class
+
+- providerRecordList : vector<struct Provider>
+- struct Provider {
+  	name : char[25]
+  	number : int
+  	address : char[25]
+  	city : char[14]
+  	state : char[2]
+  	zip : int
+  	forms : Provider Form*
+  }
+
+Associations: EFT Data Class, Manage PR Class, Provider Report
+Class
+
+
+<<entity class>>
+Service Record Class
+
+- serviceList : vector<struct Service>
+- struct Service {
+  	serviceDate : Date
+  	dateTimeReceived : DateTime
+  	providerNumber : int
+  	memberNumber : int
+  	serviceCode : int
+  	comment : char[100]
+  }
+
+Associations: Member Report Class, Record Service Class

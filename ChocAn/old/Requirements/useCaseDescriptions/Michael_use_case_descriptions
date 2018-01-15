@@ -1,0 +1,29 @@
+Use Case: Run Main Accounting Procedure
+Context: Weekly procedure run at the ChocAn Data Center that reads the week's file of services provided and prints a number of reports.
+Actors: Data Center Computer
+Main Success Scenario:
+1. 12:00 am every Friday the Main Accounting Procedure initiates.
+2. All ChocAn Member service records from the week are accessed and read.
+3. New report files are created for each Provider and each Member.
+--3.1 Utilize Produce Member Reports use case.
+--3.2 Utilize Produce Provider Reports use case.
+4. Reports are sent to Providers and Members via email attachments.
+5. A record consisting of electronic funds transfer (EFT) data is written to a disk.
+--5.1 Refer to the Produce EFT Data use case
+Extensions:
+None
+Use Case: Produce Member Reports
+Context: List of weekly Provider service records produced during the Main accounting Procedure and at any time by a Manager
+Actors: Data Center Computer, Manager
+Main Success Scenario:
+1. 12:00 am every Friday the Main Accounting Procedure initiates.
+2. All ChocAn Member service records from that week are accessed and read.
+3. A new report file for each member is created.
+--3.1 Each filename consists of the Member's name followed by the date the report is produced.
+--3.2 The file is populated with basic Member info at the top (name, number, address, member number)
+--3.3 The file is then populated by data from all of the Member's records from the week, in the order they were recorded.
+--3.4 At the end of the report, a summary is printed consisting of all the services the member recieved and where they were received at.
+Extensions:
+1a. Instead of the Main Accounting Procedure, a ChocAn Manager initiates the production of provider reports.
+2a. Only service records and provider reports specified by the Manager are accessed and run.
+4a/5a. Steps 4 and 5 do not occur if report is run by a Manager.

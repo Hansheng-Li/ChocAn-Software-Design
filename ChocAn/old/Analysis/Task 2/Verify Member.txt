@@ -1,0 +1,9 @@
+<<control class>>
+Verify Member Class:
+    + <<static>> verifyMember ( ) : Boolean
+
+Class Relationships:
+   The 'Verify Member' Control Class has an association with the "Record Service" 
+Control Class which is inherited by the "Provider Terminal" Boundary Class. It also 
+has associations with the "Member Records" Entity Class .
+	

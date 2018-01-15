@@ -1,0 +1,1099 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.2.5.1 (MacOSX)"/>
+	<meta name="author" content="Julian Diaz"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changedby" content="Julian Diaz"/>
+	<meta name="changed" content="2017-09-26T11:06:32.138486000"/>
+	<meta name="created" content="00:00:00">
+	<meta name="changedby" content="Julian Diaz">
+	<meta name="changed" content="2017-09-25T22:21:25.886827000">
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<p align="left" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>CS
+200: Project 1 – ChocAn Data Processing Software Requirements</b></font></font></font></p>
+<p align="left" style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Team
+5</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Hansheng
+Li - - - - - - - - Julian Diaz - - - - - - - - - - Michael Hall<span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">
+- - - - - - - - - </span></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal">Trent
+Whalen</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">
+- - - - - - - - - - - </span></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">-
+</span></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal">Zach
+Humphries</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal">
+</span></font></span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal">-
+- - - - - - - - -</span></span></font></span></b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">11577987</span></span></span></font></span>
+<span style="font-weight: normal">- - - - - - - - - - -</span>
+<span style="font-weight: normal">11343674 - - - - - - - - - - -
+</span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">11533484</span></span></span></font></span>
+<span style="font-weight: normal">- - - - - - - - - - - - </span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">11643273</span></span></span></font></span>
+<span style="font-weight: normal">- - - - - - - - - - - - - - </span><span style="font-weight: normal">-
+</span><span style="font-variant: normal"><font color="#000000"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">11345856</span></span></span></font></span>
+<span style="font-weight: normal">- - - - - - - - - - - - - - - - - </span></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><span style="font-weight: normal"><a href="mailto:hli68@crimson.ua.edu">hli68@crimson.ua.edu</a>
+- -</span></font> <a href="mailto:jldiaz@crimson.ua.edu"><font face="Times New Roman"><span style="font-weight: normal">jldiaz@crimson.ua.edu</span></font></a>
+<font face="Times New Roman"><span style="font-weight: normal">- -
+<a href="mailto:mphall@crimson.ua.edu">mphall</a><a href="mailto:mphall@crimson.ua.edu">1@crimson.ua.edu</a></span></font>
+<font face="Times New Roman"><span style="font-weight: normal">- -
+<a href="mailto:tdwhalen@crimson.ua.edu">tdwhalen@crimson.ua.edu</a>
+- -</span></font> - <font face="Times New Roman"><span style="font-weight: normal"><a href="mailto:zahumphries@crimson.ua.edu">zahumphries@crimson.ua.edu</a>
+- - </span></font>
+</p>
+<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman">17 Hours - - - - -
+- - - - - - - 21 Hours - - - - - - - - - - - 18 Hours - - - - - - - -
+- - - - - - 20 Hours - - - - - - - - - - - - - - 18 Hours- - - - - -
+- - - - - - - - - - - </font></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 0.12in"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#0066cc"><font face="Times New Roman"><font size="4" style="font-size: 16pt"><b>Task
+Distribution for Project 1</b></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">In
+general, our team opted to share the work of this project very
+equitably among the members, with most of the important decisions and
+tasks completed in group meetings (of which we had five) and all team
+members participating in mostly equal parts in all tasks. Thus, it
+makes more sense for us to talk about how work was done for each
+section of the project, rather than a breakdown of each individual’s
+work.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><br/>
+<b>Glossary:
+</b></font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">All
+team members came to the first meeting with lists of potential
+glossary terms. A new list was compiled as a group, and the terms
+were divided evenly among the team members for defining. After all
+terms were defined, we met again and discussed revisions needed.
+Afterwards, Trent edited down the revised list to a final list of
+essential terms, which we all proof-read and approved individually.
+The result is the glossary submitted in the solution. </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">HL:
+%, JD: %, MH: %, TW: %, ZH: %</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Use
+Case Diagram:</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">Similar
+to the Glossary, each member individually wrote lists of potential
+use cases and use case diagrams which were compiled and edited as a
+group between two meetings. Zach rendered the final .vpp version of
+the Use Case Diagram, with some minor content revising by Julian and
+Trent before the final submission.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">HL:
+%, JD: %, MH: %, TW: %, ZH: %</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Use
+Case Descriptions:</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">Again
+similar to Glossary, the list of use cases was divided between all
+members, with three writing two use cases and two who wrote three due
+to an uneven divide. We proof-read and edited all use cases as a
+group, with the exception of Zach’s use cases which Michael
+proof-read, resulting in the final versions that appear in the
+solution.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">HL:
+%, JD: %, MH: %, TW: %, ZH: %</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>report.html:</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">The
+report.html file containing the solution and .zip file was compiled
+and submitted by Julian and proof-read by all team members. </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">In
+the following sections there are links embedded to relevant files. </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><a href="glossary.txt"><font color="#0066cc"><font face="Times New Roman"><font size="4" style="font-size: 16pt"><b>Glossary</b></font></font></font></a></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman">Below
+is an alphabetized list of terms within our software product’s
+domain. These terms were carefully selected from the original
+requirements description document because of their importance in
+describing the universe within which our software product will
+function. Each term is an actor, use case, or class-object (or subset
+of these) within our software project.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Accounts
+Payable:</b> A type of short-term debt to be paid off to creditors.
+E.g. money ChocAn owes it's providers.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>ACME
+Accounting Services: </b>A third-party organization contracted to
+handle financial procedures such as recording payments of membership
+fees, suspending members whose fees are overdue, and reinstating
+suspended members who have now paid what is owing.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>ChocAn
+Data Center:</b> Remote site where ChocAn servers (computers) store
+all relevant records such as member, provider, and service records,
+and where our software is primarily in use.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Chocoholics
+Anonymous (ChocAn):</b> An organization offering services to help
+those suffering from an addiction to chocolate.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Consultation
+&amp; Treatment:</b> A form of health care service given to ChocAn
+members by its providers.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Electronic
+Funds Transfer (EFT) Data: </b>A record file describing the amount of
+money ChocAn will transfer to a particular provider.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Health
+Care Professional (Provider): </b>Those who provide health care
+services to ChocAn members. Receives a weekly provider report.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Interactive
+Mode:</b> State of the Data Center computers allowing operators to
+add, delete, or update member and provider records.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Main
+Accounting Procedure:</b> Reads the week's service records and
+provider’s forms produces all reports.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Manager:</b>
+Employee at ChocAn. Receives a weekly summary report, and is able to
+produce any report upon request.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Member:</b>
+Those who pay a monthly fee to ChocAn. Receives a weekly member
+report.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Member
+Card: </b>Plastic card embossed with member's name and incorporating
+a magnetic strip encoding member number.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Member
+Number: </b>9-digit number used to identify ChocAn members.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Member
+Status:</b> Statement describing a member's relationship to ChocAn. A
+member status may be suspended if the member has not paid fees for at
+least one month.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Member
+Record:</b> Information stored at the ChocAn Data Center describing
+attributes about a ChocAn member.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Member
+Report: </b>File generated listing services provided to a member that
+week, sorted in order of service date.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Operator:</b>
+Employee at ChocAn Data Center capable of add, delete, and update
+member and provider records.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Provider
+Directory:</b> File containing an alphabetically ordered list of
+service names and their corresponding codes and fees.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Provider
+Number:</b> 9-digit number used to identify ChocAn providers.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Provider
+Record:</b> Information stored at the ChocAn Data Center describing
+attributes about a ChocAn provider.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Provider
+Report:</b> File generated listing services given by each provider
+that week, sorted in the order data was received by the computer,
+along with a summary of total fees owed and number of consultations.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Provider's
+Form:</b> Verification form completed after generating a service
+record, used for billing ChocAn.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Service
+Code:</b> 6-digit number used to identify a particular service
+provided by a ChocAn provider.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Times New Roman"><b>Service
+Record:</b> Information stored on disk describing attributes of a
+service provided to a member by a provider.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><a href="CA_UCD.vpp"><font color="#0066cc"><font face="Times New Roman"><font size="4" style="font-size: 16pt"><b>Use
+Case Diagram</b></font></font></font></a></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">The
+Use Case Diagram made in Visual Paradigm Community Edition</span></font></font></font><font color="#000000">
+</font><font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">for
+our software is shown below. We have defined our system box to be
+“ChocAn Data Processing Software”. We have six actors: Member,
+Provider, Data Center Computer, Manager, ACME, and Operator, each of
+which is defined in the glossary. After many iterations, our diagram
+resulted in ten <a href="UCD.txt">use cases</a>: Verify Member
+Number, Produce Service Record, Create Provider’s Form, Run Main
+Accounting Procedure, Produce Member Reports, Produce Provider
+Reports, Produce EFT Data, Manage Member Records, Update Member
+Records, and Manage Provider Records. Each use case is discussed in
+detail below in the Use Case Descriptions section.</span></font></font></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><img src="Team5UCD.png" name="Image1" align="left" width="1207" height="793">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><a href="UseCaseDescriptions.txt"><font color="#0066cc"><font face="Times New Roman"><font size="4" style="font-size: 16pt"><b>Use
+Case Descriptions</b></font></font></font></a></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">The following Use
+Case Descriptions are step by step illustrations of how each use case
+that we outlined above should run successfully, as well as how they
+deal with alternative scenarios. They also provide context into how
+they fit together with other entities in the system. The order of the
+use cases is somewhat arbitrary; they are ordered by their position
+in the diagram from top to bottom, left to right.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Use
+Case: </b></span><span lang="en-US">Verify Member Number</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Context:
+</b></span><span lang="en-US">Member provides member number to
+provider to confirm the member number is valid.</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Actors:
+</b></span><span lang="en-US">Member, Provider</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+The provider either keys in the member number provided by the member
+or slides the member’s card in the terminal.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+The terminal dials the ChocAn Data Center Computer.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+The ChocAn Data Center Computer is prompted to verify the member
+number.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">4.
+The member number is valid and the word “Validated” is displayed
+on the provider’s terminal.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">5.
+The provider chooses to utilize the Produce Service Record use case.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">4a.
+If the member number is not valid, then the reason is displayed to
+the provider’s terminal (“Invalid number” or “Member
+suspended”). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">5a.
+If the provider does not choose to utilize the Produce Service Record
+case, then the use case is ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Use
+Case: </b></span><span lang="en-US">Produce Service Record </span><span lang="en-US"><b>Extends
+</b></span><span lang="en-US">Verify Member Number</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Context:
+</b></span><span lang="en-US">Information about the service provided
+to the member is saved to disk.</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Actors:
+</b></span><span lang="en-US">Provider</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+Verify member number use case is successful.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+The provider is prompted to enter the date of service in the format
+MM-DD-YYYY.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+The provider is prompted to enter the service code. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">4.
+The name of service (up to 20 characters) corresponding to the
+service code provided is displayed on the provider’s terminal. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">5.
+The provider is prompted to verify the displayed service is correct. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">6.
+If the provider chooses to enter comments about the service provided
+(up to 100 characters), then they may do so. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">7.
+The system writes a record to disk which contains the following
+fields:</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Current
+date and time (MM–DD–YYYY HH:MM:SS).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Date
+service was provided (MM–DD–YYYY).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+number (9 digits).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+number (9 digits).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Service
+code (6 digits).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Comments
+(100 characters) (optional).</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">7.
+Utilize use case Create Provider Form. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:
+</b></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">5a.
+If the provider chooses not to enter comments, then the use case
+continues at step 6</font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Use
+Case: </b></span><span lang="en-US">Create Provider’s</span> <span lang="en-US">Form</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Context:
+</b></span><span lang="en-US">For verification purposes the provider
+completes a form describing the service provided to the member,
+including billing information.</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Actors:
+</b></span><span lang="en-US">Provider</span></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+The system looks up the fee associated with the previously entered
+service code in the use case Produce Service Record.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.The
+system prompts the provider to enter the current date and time, the
+date the service was provided, member name and number, service code,
+and fee to be paid.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+The Provider’s Form looks like this:</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Date
+of service (MM–DD–YYYY).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Date
+and time data were received by the computer (MM–DD–YYYY
+HH:MM:SS).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+name (25 characters).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+number (9 digits). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Service
+code (6 digits). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Fee
+to be paid (up to $999.99).</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">None.<br/>
+</font></font></font><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Use
+Case:</b></span> <span lang="en-US">Run Main Accounting Procedure </span></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Context:
+</b></span><span lang="en-US">Weekly procedure run at the ChocAn Data
+Center that reads the week's file of services provided and prints a
+number of reports. </span></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Actors:</b></span>
+<span lang="en-US">Data Center Computer </span></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario: </b></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+12:00 am every Friday the Main Accounting Procedure initiates. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+All ChocAn Member service records from the week are accessed and
+read. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+New report files are created for each Provider and each Member.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.1 Produce Member Reports use case </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.2 Produce Provider Reports use case </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">5.
+A record consisting of electronic funds transfer (EFT) data is
+written to a disk. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 5.1 Refer to the Produce EFT Data use case </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Extensions:</b></span>
+</font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">None
+</font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Use
+Case:</b></span> <span lang="en-US">Produce Member Reports </span></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Context:
+</b></span><span lang="en-US">List of weekly Provider service records
+produced during the Main accounting Procedure and at any time by a
+Manager </span></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><span lang="en-US"><b>Actors:</b></span>
+<span lang="en-US">Data Center Computer, Manager </span></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario: </b></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+12:00 am every Friday the Main Accounting Procedure initiates. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+All ChocAn Member service records from that week are accessed and
+read. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+A new report file for each member is created. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.1 Each filename consists of the Member's name followed by the
+date the report is produced. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.2 The file is populated with basic Member info at the top (name,
+number, address, member number) </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.3 The file is then populated by data from all of the Member's
+records from the week, in the order they were recorded. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.4 The Member Report looks like this:</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+name (25 characters). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+number (9 digits).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+street address (25 characters).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+city (14 characters).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+state (2 letters).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+ZIP code (5 digits).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">For
+each service provided, the following details are required:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Date
+of service (MM–DD–YYYY). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+name (25 characters). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Service
+name (20 characters).</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:
+</b></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1a.
+Instead of the Main Accounting Procedure, a ChocAn Manager initiates
+the production of provider reports. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2a.
+Only service records specified by the Manager are accessed and run. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Use
+Case: </b>Produce Provider Reports</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Context:
+</b>List of weekly Provider service records produced during the Main
+Accounting Procedure and at any time by a Manager</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Actors:
+</b>Data Center Computer, Manager</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario: </b></font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+12:00 am every Friday the Main Accounting Procedure initiates.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+All ChocAn Provider service records and provider forms from that week
+are accessed and read.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+A new report file for each provider is created.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.1 Each filename consists of the Provider's Name followed by the
+date the report is produce.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.2 The file is populated with basic Provider info at the top
+(name, number, and address)</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.3 The file is then populated by data from all of that
+individual's provider's forms from that week, in order of submission.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.4 At the end of the report, a summary is printed consisting the
+number of consultations and total fees due to that provider.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 3.5 The Provider Report will look like this:</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+name (25 characters). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+number (9 digits).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+street address (25 characters). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+city (14 characters). Provider state (2 letters). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Provider
+ZIP code (5 digits). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">For
+each service provided, the following details are required: </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Date
+of service (MM–DD–YYYY). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Date
+and time data were received by the computer (MM–DD–YYYY
+HH:MM:SS). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+name (25 characters). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Member
+number (9 digits). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Service
+code (6 digits). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Fee
+to be paid (up to $999.99). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Total
+number of consultations with members (3 digits). </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">Total
+fee for week (up to $99,999.99).</font></font></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1a.
+Instead of the Main Accounting Procedure, a ChocAn Manager initiates
+the production of provider reports.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2a.
+Only the service records and provider forms specified by the Manager
+are accessed and read.</font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman"><b>Use Case:
+</b>Produce EFT Data</font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman"><b>Context: </b>At
+the end of Main Accounting Procedure, Provider fees are recorded for
+payment purposes.</font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman"><b>Actors: </b>Data
+Center Computer</font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal">
+<font color="#000000"><font face="Times New Roman"><b>Main Success
+Scenario:</b></font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman">1. Fridays at
+12:00 am, the Main Accounting Procedure produces provider reports.</font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman">2. A new
+Electronic Funds Transfer (EFT) file for each provider report is
+created.</font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman">- - 2.1 The file
+is populated with the Provider name, number, and amount to be
+transferred, all read from the provider's report.</font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal">
+<font color="#000000"><font face="Times New Roman"><b>Extensions:</b></font></font></p>
+<p style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+<font color="#000000"><font face="Times New Roman">None.</font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Use
+Case:</b> Manage Member Records</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Context:</b>
+Add, update, or delete member records</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Actors:</b>
+Operator</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+The system verifies it is in interactive mode.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+Using a menu, the operator selects from the following:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 2.1 Add Member Records:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.1 The operator is prompted to enter the new member's name
+in the format First Last (e.g. John Doe).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.2 The operator is prompted to enter the new member's street
+address.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.3 The operator is prompted to enter the new member's city.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.4 The operator is prompted to enter the new member's state
+in the format of a postal abbreviation.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.5 The operator is prompted to enter the new member's ZIP
+code.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.6 The system generates a unique member number for the new
+member, and the new member's status is set as &quot;active&quot;.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.1.7 The new member record is saved to the ChocAn Data Center
+Computer.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 2.2 Update Member Records: Utilize use case Update Member Records.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 2.3 Delete Member Records:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.3.1 The operator keys in the member number of the resigned
+member.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.3.2 The corresponding member name is displayed to the
+operator.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.3.3 The operator is prompted to verify the displayed member
+is the one to be deleted.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 2.3.4 The member record is removed from the ChocAn Data Center
+computer.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 2.4 Exit: The use case is ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.a
+If the system is not in interactive mode, then the use case is ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.3.1a
+The operator enters an invalid member number:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 2.3.1a.1 The system displays &quot;Invalid number&quot;.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 2.3.1a.2 The use case is ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.3.3a
+If the displayed member is not to be deleted, then the use case is
+ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Use
+Case:</b> Update Member Records <b>Extends </b>Manage Member Record</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Context:
+</b>Specific information within a member record is changed by Acme
+each evening at 9pm or by an Operator. </font></font></font>
+</p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Actors:
+</b>Acme, Operator</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Main
+Success Scenario:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1.
+The user keys in the member number of the member record to be
+updated.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">2.
+The corresponding member name is displayed to the user.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3.
+The user is prompted to verify the displayed member is the one to be
+updated.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">4.
+Using a menu, the user selects from the following:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 4.1 Update Name: The user is prompted to enter the new member name
+in the format First Last (e.g. John Doe).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 4.2 Update Address:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 4.2.1 The user is prompted to enter the new street address of
+the member.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 4.2.2 The user is prompted to enter the new city of the member.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 4.2.3 The user is prompted to enter the state of the member in
+the format of a postal abbreviation.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- - - 4.3.4 The user is prompted to enter the new ZIP code of the
+member.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 4.3 Update Member Status: The user is prompted to enter the new
+member status of the member (e.g. suspended).</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 4.4 Exit: The use case is ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">5.
+The system rewrites the member record and saves the changes to the
+ChocAn Data Center computer.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt"><b>Extensions:</b></font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">1a.
+The user enters an invalid member number:</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 1a.1 The system displays &quot;Invalid number&quot;.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">-
+- 1a.2 The use case is ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<font color="#000000"><font face="Times New Roman"><font size="3" style="font-size: 12pt">3a.
+If the displayed member is not to be updated, then the use case is
+ended.</font></font></font></p>
+<p style="margin-bottom: 0.11in; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0in; padding-bottom: 0.03in; padding-left: 0in; padding-right: 0in; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman"><b>Use
+Case:</b> Manage Provider Records</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman"><b>Actors:</b>
+Operator</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman"><b>Context:</b>
+ChocAn operators add, update, or delete provider records.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman"><b>Main
+Success Scenario:</b></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">1.
+The system verifies it is in interactive mode.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">2.
+Using a menu, the operator selects from the following:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- 2.1 Add Provider:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.1 The operator enters the provider's name in the format
+First Last (e.g. John Doe) up to 25 characters.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.2 The operator enters the provider's street address.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.3 The operator enters the provider's city.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.4 The operator enters the provider's state in the format of
+a postal abbreviation.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.5 The operator enters the provider's ZIP code.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.6 The provider is assigned a provider number.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.1.7 The use case is ended.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- 2.2 Update Provider:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.2.1 The operator enters the provider number.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.2.2 The corresponding provider name is displayed.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.2.3 The operator verifies that the displayed provider is the
+one to be updated.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.2.4 Using a menu, the operator selects from the following:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - 2.2.4.1 Update Name:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - - - 2.2.4.1.1 The operator enters the new name.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - 2.2.4.2 Update Street Address:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - - - 2.2.4.2.1 The operator enters the new street address.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - 2.2.4.3 Update City</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - - - 2.2.4.3.1 The operator enters the new city.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - 2.2.4.4 Update State</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - - - 2.2.4.4.1 The operator enters the postal abbreviation
+of the new state.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - 2.2.4.5 Update ZIP code</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - - - 2.2.4.5.1 The operator enters the new ZIP code.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - - - 2.2.4.6 Exit: The use case is ended.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- 2.3 Delete Provider:</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.3.1 The operator enters the provider number of the provider
+to be removed.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.3.2 The corresponding provider name is displayed.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.3.3 The operator verifies that the displayed provider is the
+one to be deleted.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- - - 2.3.4 The provider is removed from the ChocAn Data Center
+computer.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">-
+- 2.4 Exit: The use case is ended.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman"><b>Extensions:</b></font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><font face="Times New Roman">1.a
+If the system is not in interactive mode, the use case is ended.</font></p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0.11in; line-height: 100%"><br/>
+<br/>
+
+</p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+111111
+Teeth Cleaning
+$85.95
+222222
+Blood Test
+$20.00
+333333
+Addiction Counseling
+$100.00
+444444
+Out-patient Rehabilitation
+$450.00
+555555
+In-patient Rehabilitation
+$1070.52
+666666
+Autopsy
+$5000.50

@@ -1,0 +1,200 @@
+1. Manage Member Records - C
+- member : Member Record
+
++ addMem(m : Member Record) : void
++ changeMemName(m : Member Record) : void
++ changeMemNum(m : Member Record) : void
++ changeMemPhoneNum(m : Member Record) : void
++ changeAddress(m : Member Record) : void
++ deleteMem(m : Member Record) : void
+
+Associations: Operator Terminal, Provider Records
+
+
+2. Manage Provider Records - C
+- provider : Provider Record
+
++ addProv(m : Provider Record) : void
++ changeProvName(p : Provider Record) : void
++ changeProvNum(p : Provider Record) : void
++ changeProvPhoneNum(p : Provider Record) : void
++ changeAddress(p : Provider Record) : void
++ deleteProv(p : Provider Record) : void
+
+Associations: Operator Terminal, Member Records
+
+
+3. Record Service - Control
+
+Attributes:
+    + <<static>> recordProviderService( ): void
+
+Class Relationships:
+   The "Record Service" Control Class has an association with the "Provider
+ Terminal" Boundary Class which is inherited by the Actor "Provider". It also
+has associations with the "Verify Member" Control Class and "Provider Form" Entity
+Class.
+
+
+4. Verify Member Control
+
+Attributes:
+    + <<static>> verifyMember ( ) : Boolean
+
+Class Relationships:
+   The 'Verify Member' Control Class has an association with the "Record Service"
+Control Class which is inherited by the "Provider Terminal" Boundary Class. It also
+has associations with the "Member Records" Entity Class .
+
+
+5. Provider's Form - Entity
+Attributes:
+    - dateOfService : struct Date (MM-DD-YYYY)
+    - dateTimeRecieved : struct DateTime (MM-DD-YYYY HH:MM:SS)
+    - memberNumber : int (9 digits)
+    - serviceCode : int (6 digits)
+    - serviceFee : double (up to 999.99)
+    - nextProviderForm : ProviderForm pointer
+Class Relationships:
+    The 'Procider's Form' Entity Class has an association with the 'Provider
+    Report' Boundry Class, which is inherited by the 'Main Accounting Procedure'
+    Control Class. It also has an association with the 'Record Service' Control
+    Class, which is inherited by the 'Verify Member' Control Class.
+
+
+6. Service Record - Entity
+Attributes:
+    - dateTimeRecieved : struct DateTime (MM-DD-YYYY HH:MM:SS)
+    - dateOfService : struct Date (MM-DD-YYYY)
+    - providerNumber : int (9 digits)
+    - memberNumber : int (9 digits)
+    - serviceCode : int (6 digits)
+    - comments : char* (up to 100 characters)
+Class Relationships:
+    The 'Service Record' Entity Class has an association with the 'Record
+    Service' Control Class, which is inherited by the 'Verify Member' Control
+    Class. It also has associations with the 'EFT Data' Boundary Class and the
+    'Member Report' Boundary Class, which are both inherited by the 'Main
+    Accounting Procedure' Control Class.
+
+
+7. Member Records - E
+Attributes:
+    - memberName : char* (25 characters)
+    - memberNumber : int (9 digits)
+    - memberAddress : char* (25 characters)
+    - memberCity : char* (14 characters)
+    - memberState : char* (2 letters)
+    - memberZip : int (5 digits)
+    (add links to their respective forms/records)
+
+Manage MR and Verify Member both act on Member Records by
+    accessing and editing its data. The data from Member Records
+    is also used to create the Member Report.
+
+Class Relationships:
+
+
+8. Provider Records - E
+Attributes:
+    - providerName : char* (25 characters)
+    - providerNumber : int (9 digits)
+    - providerAddress : char* (25 characters)
+    - providerCity : char* (14 characters)
+    - providerState : char* (2 letters)
+    - providerZIP : int (5 digits)
+
+    (pointer to each of their provider forms)
+
+Class Relationships:
+Provider Records is acted upon and modified by Manage PR.
+The
+ data in Provider Records is also used by Provider Report and
+ EFT Data.
+
+
+9. <<boundary class>>
+Member Report Class
+
+- member : Member Record
+- dateOfService : vector<string>
+- providerName : vector<string>
+- serviceNames : vector<string>
+- fileName : string
+
++ setMember(m : Member Record) : void
++ addServiceDate(d : Provider Directory) : void
++ addProviderName(s : Service Record) : void
++ addServiceName(s : Service Record) : void
++ setFileName() : void
++ printReport() : void
+
+Associations: Member Record Class, Provider Directory Class,
+Service Record Class
+
+Extends: Main Accounting Procedure Class
+
+
+10. <<boundary class>>
+Provider Report Class
+
+- provider : Provider Record
+- services : vector<Provider Form>
+- fileName : string
+
++ setProvider(p : Provider Record) : void
++ addService(s : Provider Form) : void
++ setFileName() : void
++ printReport() : void
+
+Associations: Provider Record Class, Provider Form Class
+
+Extends: Main Accounting Procedure Class
+
+
+11. <<boundary class>>
+EFT Data
+
+- providerName : string
+- providerNumber : int
+- amount : double
+- fileName : string
+
++ setProviderName(p : Provider Record) : void
++ setProviderNumber(p : Provider Record) : void
++ setAmount(f : Provider Form) : void
++ printData() : void
+
+Associations: Provider Record Class, Provider Form Class
+
+Extends: Main Accounting Procedure Class
+
+
+12. <<control class>>
+Main Accounting Procedure
+
+- useTime : DateTime
+- members : Member Record*
+- providers : Provider Record*
+- managerRequest : struct Request<string, int>
+
++ checkTime() : bool
++ printAllReports() : void
++ printReport() : void
+
+Associations: Manager Terminal
+
+Includes: Member Report Class, Provider Report Class, EFT Data
+Class
+
+
+13. Provider Directory - E
+attributes:
+ - listOfServices : Service* (head of linked list of services)
+ - struct Service {
+	serviceCode : int
+	serviceName : string
+	serviceFee  : double
+	next        : Service*
+   }
+Associations: Record Service, Service Record, Provider�s Form, Member Report

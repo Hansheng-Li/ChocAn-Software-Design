@@ -1,0 +1,15 @@
+<<boundary class>>
+Provider Report Class
+
+- provider : Provider Record
+- services : vector<Provider Form>
+- fileName : string
+
++ setProvider(p : Provider Record) : void
++ addService(s : Provider Form) : void
++ setFileName() : void
++ printReport() : void
+
+Associations: Provider Record Class, Provider Form Class
+
+Extends: Main Accounting Procedure Class

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<font face="verdana" size="4">
+
+<p>
+<b>Use case:</b> Produce Provider Reports
+<br/><b>Context:</b> List of weekly Provider service records produced during the Main Accounting Procedure and at any time by a Manager 
+<br/><b>Actors:</b> Data Center Computer, Manager
+<br/><b>Main Success Scenario:</b>
+<br/>1. 12:00 am every Friday the Main Accounting Procedure initiates.
+<br/>2. All ChocAn Provider service records and provider forms from that week are accessed and read.
+<br/>3. A new report file for each provider is created. 
+<br/>- - 3.1 Each filename consists of the Provider's Name followed by the date the report is produce.
+<br/>- - 3.2 The file is populated with basic Provider info at the top (name, number, and address) 
+<br/>- - 3.3 The file is then populated by data from all of that individual's provider's forms from that week, in order of submission.
+<br/>- - 3.4 At the end of the report, a summary is printed consisting the number of consultations and total fees due to that provider.
+<br/>- - 3.5 The finished file will
+<br/>4. EFT data is then written to disk.
+<br/><b>Extensions:</b>
+<br/>1a. Instead of the Main Accounting Procedure, a ChocAn Manager initiates the production of provider reports.
+<br/>2a. Only the service records and provider forms specified by the Manager are accessed and read.
+<br/>4a. No EFT data is written if report is created by a Manager. 
+</p>
+<br/>
+<br/>
+<p>
+<b>Use case:</b> Produce EFT Data
+<br/><b>Context:</b> At the end of Main Accounting Procedure, Provider fees are recorded for payment purposes. 
+<br/><b>Actors:</b> Data Center Computer
+<br/><b>Main Success Scenario:</b>
+<br/>1. Fridays at 12:00 am, the Main Accounting Procedure produces provider reports.
+<br/>2. A new Electronic Funds Transfer (EFT) file for each provider report is created. 
+<br/>- - 2.1 The file is populated with the Provider name, number, and amount to be transferred, all read from the provider's report.  
+<br/><b>Extensions:</b> None.
+</p>
+
+</font>
+</html>

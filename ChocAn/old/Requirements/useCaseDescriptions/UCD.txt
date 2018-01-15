@@ -1,0 +1,12 @@
+Use Cases
+
+1. Verify Member Number (X--2) 
+2. Produce Service Record (I--3)
+3. Create Provider Form
+4. Run Main Accounting Procedure (I--5)(I--6)
+5. Produce Member Reports
+6. Produce Provider Reports (I--7)
+7. Produce EFT Data
+8. Manage Provider Records (I--10)
+9. Manage Member Records (X--11)
+10. Update Member Records

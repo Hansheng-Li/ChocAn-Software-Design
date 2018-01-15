@@ -1,0 +1,16 @@
+Use Case: Request Provider Directory
+Actors: Provider
+Brief Description: The use case Request Provider Directory allows
+the provider to view the provider directory at any time.
+
+Main Success Scenario:
+1. Using the provider's terminal, the provider selects the option
+to view the provider directory.
+2. The system opens a read-only copy of the provider directory
+file.
+3. Using the provider's terminal, the provider selects the option
+to close the directory.
+4. The system closes the provider directory file.
+
+Extensions:
+n/a

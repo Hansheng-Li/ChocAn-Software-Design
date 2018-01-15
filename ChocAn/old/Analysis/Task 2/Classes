@@ -1,0 +1,19 @@
+Entities:
+    -Member Records
+    -Provider Records
+    -Service Records
+    -Provider Form
+    
+Boundary:
+    -Provider's Terminal
+    -Manager's Terminal
+    -Operator's Terminal
+    
+Control:
+    -Main Accounting Procedure
+        ->EFT Data
+        ->Provider Report
+        ->Member Report
+    -Member # Verification
+    -Manage Member Records
+        <-Update

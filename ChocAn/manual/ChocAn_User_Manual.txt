@@ -1,0 +1,155 @@
+ChoAn Data Processing Software --- User Manual
+By Team 5
+
+Running the Main Accounting Procedure
+
+	Typically run automatically once per week, but for demo can be
+	selected by manager
+	
+	1) Assuming Member and/or Provider Record(s) exist in memory, select
+	   option (1) Manager Terminal by typing "1" and enter.
+	
+	2) Next, to select "Run Main Accounting Procedure", again type "1" 
+	   and enter.
+	
+	3) All reports for all records should now be available in the local
+	   directory. 
+	   
+	   
+Producing Individual Member Reports
+	
+	At any time, a ChocAn manager may request to have a report made
+	for any active ChocAn member for that week. To do so, take the
+	following steps:
+	
+	1) Assuming Member and/or Provider Record(s) already exist in memory,
+	   select option (1) Manager Terminal by typing "1" and enter.
+	
+	2) Next, select "Print Individual Report" by typing "2" and enter.
+
+	3) To select the report type as Member Report, type "1" and enter.
+	
+	4) Next, you will be prompted to enter the 9-Digit member number of the
+	   member whose report you wish to print. 
+	   
+	5) If records existed for the member number entered previously, a report
+	   for that member should now be located in the local file directory.
+	   Otherwise, no report will be produced and the system will exit.
+	   
+	
+Producing a Provider Report and EFT Data
+
+	General Notes: All input provided by the user to produce a
+	Provider Report should be given by the numeric keypad. If an
+	invalid selection is made, the terminal will be aborted.
+	
+	1) Login to the Manager Terminal by entering "1" and pressing
+	enter.
+	
+	2) Select "Print individual report" by entering "2" and pressing
+	enter.
+	
+	3) Select the "Provider Report" type by entering "2" and pressing
+	enter.
+	
+	4) Enter the provider number of the desired provider to be printed
+	and press enter.
+	
+	5) The user will be prompted to check their system for the
+	produced Provider Report and corresponding EFT Data. If the
+	provider number entered was invalid, then the user will be
+	prompted and no Provider Report or EFT Data will be produced.
+
+Manage Member Records
+    
+    1) Login to the Operator Terminal by entering "1" in the main menu
+    
+    2) Select Member by entering "1"
+    
+    3.1.1) To add a new member, enter "1" then follow the prompts to enter each field of information.
+    3.1.2) The new member is now added to the existing records and you will be returned to the main menu.
+	
+	3.2.1) To edit an existing member, enter "2" to select the "Edit Member" option then enter the member number
+	for the member account to be modified.
+	3.2.2) Next, choose an attribute from the list to edit or enter "4" to exit to the main menu.
+	3.2.3) Enter the new value of the attribute to be changed and press enter.
+	3.2.4) The attribute has been changed to its new value and you will be returned to the main menu.
+	
+	3.3.1) To delete an existing member, enter "3" to select the "Delete Member" option then enter the member
+	number for the member account to be deleted.
+	3.3.2) The given member account has been deleted and you will be returned to the main menu.
+
+Verify Member 
+
+	When you're in the provider terminal to process a service or in the manager terminal to 
+	print an individual member report, system will request you to enter
+	the appropriate member number, and it will verify the member number you entered was 
+	valid or not. If the member number entered was invalid, an error message 
+	will be printout and exit. 
+	For a member to be valid, they first need to be added by an operator and 
+	assigned a number.
+	 
+	To add or edit a member you need to:
+	
+	1) Login to the Operator Terminal by type "2" and enter.
+	
+	2) Then select "Member" by type "1" and enter.
+	
+	3) Then you can either choose to "Add Member" by type "1", 
+	or choose to "Edit member" by type"2", or choose to "delete Member"
+	by type "3" and enter. 
+
+Produce Service Record
+
+	Each provider need to produce service record in order to let manger to
+	check and print out each report. By doing so, you need to login to the 
+	Provider Terminal by typing "3" and enter. Then just follow the instructions
+	to type in the information needed for the Service Record fields.
+
+Produce Provider Form
+
+	Each provider has its own list/record of services provided in the form of provider
+	forms. In order to add a form one must access the provider terminal. To access
+	the provider terminal you just need to log in to it by typing "3" at the main
+	menu and pressing enter. Once you are logged in you simply need to follow the
+	instructions given by the program to produce the form and add it to the record.
+
+Manage Provider Records
+	
+	In order to manage provider records one needs to select the Operator Terminal
+	from the main menu by typing "2" and pressing enter. Once logged in the terminal will
+	ask you what type of record you are working with. Select Provider, and then in the
+	next menu select whether you want to Add, Edit, or Delete an entry. Follow the
+	instructions given by the program in order to perform the action that you want.
+	
+Task Distribution:
+	Julian Diaz		: 11343674	: 20 hours
+	Michael Hall		: 11533484	: 20 hours
+	Zach Humphries	: 11345856	: 20 hours
+	Hansheng Li		: 11577987	: 20 hours
+	Trenton Whalen	: 11643273	: 20 hours
+
+	Task 1:
+		Classes were divided among team members and then implemented. Most coding was
+		done during group meetings to ensure communication among team members.
+		Authorship was shared among team members for more difficult classes (and is
+		shown in the JavaDocs).
+
+		JD:20%	MH:20%	ZH:20%	HL:20%	TW:20%
+
+	Task 2:
+		JUnit unit tests were assigned to team members such that no team member had
+		authorship in the class they tested. All JUnit unit tests tested for at least
+		success and failure. All classes passed their unit tests.
+
+		JD:20%	MH:20%	ZH:20%	HL:20%	TW:20%
+
+	Task 3:
+		Use cases for the program were divided among team members. Each team member
+		wrote the instructions for their corresponding use case in the User Manual.
+		JavaDocs were written for each class by the primary author of that class.
+		Julian made the necessary changes to the class diagram. Trenton wrote the task
+		distribution description.
+
+		JD:20%	MH:20%	ZH:20%	HL:20%	TW:20%
+

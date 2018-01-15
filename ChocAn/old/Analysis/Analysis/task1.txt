@@ -1,0 +1,14 @@
+Providers use a terminal with one-line display and built-in
+keyboard to enter a member number. The terminal then communicates
+with the ChocAn Data Center computer to verify the member number.
+The provider then enters information about the service provided
+and completes a provider form. A service record and the provider
+form are then written to a disk. Member reports, provider reports,
+and EFT data are produced weekly by the ChocAn Data Center
+computer. Managers can use their computer terminals to produce
+reports at any time. Operators can add, update, and delete member
+records and provider records stored on the ChocAn Data Center
+computers. The system communicates with the Acme computer to
+update member records.
+
+(105 Words)

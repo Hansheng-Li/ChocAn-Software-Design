@@ -1,0 +1,16 @@
+<<boundary class>>
+EFT Data
+
+- providerName : string
+- providerNumber : int
+- amount : double
+- fileName : string
+
++ setProviderName(p : Provider Record) : void
++ setProviderNumber(p : Provider Record) : void
++ setAmount(f : Provider Form) : void
++ printData() : void
+
+Associations: Provider Record Class, Provider Form Class
+
+Extends: Main Accounting Procedure Class

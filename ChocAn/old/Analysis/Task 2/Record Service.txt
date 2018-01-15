@@ -1,0 +1,9 @@
+<<control class>>
+Record Service Class:
+    + <<static>> recordProviderService( ): void
+
+Class Relationships:
+   The "Record Service" Control Class has an association with the "Provider
+ Terminal" Boundary Class which is inherited by the Actor "Provider". It also 
+has associations with the "Verify Member" Control Class and "Provider Form" Entity 
+Class.
